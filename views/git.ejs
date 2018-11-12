@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>user-details</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+
+</head>
+
+<body>
+    <% if(output !== null){ %>
+    <h1>
+        <%= output %>
+    </h1> <br>
+    <img src="<%= img %>" alt="user image" class="avatar">
+    <p>User url : <a href="<%= link %>">
+            <%= link %></a> </p>
+    <% } %>
+
+    <% if(error !== null){ %>
+    <h1>
+        <%= error %>
+    </h1>
+    <% } %>
+</body>
+
+</html>
