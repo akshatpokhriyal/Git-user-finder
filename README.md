@@ -10,5 +10,5 @@ $ npm install
 ```
 
 ```sh
-$ npm start
+$ node app.js
 ```
