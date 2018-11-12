@@ -22,7 +22,7 @@ app.get('/git/:id', function (req, res) {
     var url = `api.github.com/users/${id}`;
     request(url, function (err, response) {
         if (err) {
-            res.render('git', { output: null, error: 'no result found' })
+            res.render('git', { output: null, error: 'no result found! Please enter correct Username' })
         }
         else {
             var body = JSON.parse(response.text);
